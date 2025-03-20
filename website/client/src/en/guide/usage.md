@@ -45,7 +45,7 @@ repomix --remote user/repo --remote-branch 935b695
 repomix --compress
 
 # You can also use it with remote repositories:
-repomix --remote yamaadshy/repomix --compress
+repomix --remote yamadashy/repomix --compress
 ```
 
 ## Output Formats

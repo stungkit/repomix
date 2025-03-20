@@ -221,6 +221,7 @@ const triggerFileInput = () => {
 <style scoped>
 .upload-wrapper {
   width: 100%;
+  min-width: 0;
 }
 
 .upload-container {
@@ -234,6 +235,8 @@ const triggerFileInput = () => {
   align-items: center;
   background: var(--vp-c-bg);
   user-select: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .upload-container:hover {
@@ -260,7 +263,8 @@ const triggerFileInput = () => {
   align-items: center;
   gap: 12px;
   width: 100%;
-  pointer-events: none; /* Allow clicks to pass through to container */
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .upload-icon {
@@ -281,6 +285,8 @@ const triggerFileInput = () => {
 .upload-text {
   flex: 1;
   font-size: 14px;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .upload-text p {
@@ -288,6 +294,7 @@ const triggerFileInput = () => {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
 }
 
 .error-message {
@@ -299,6 +306,7 @@ const triggerFileInput = () => {
   align-items: center;
   gap: 8px;
   width: 100%;
+  overflow: hidden;
 }
 
 .clear-button {

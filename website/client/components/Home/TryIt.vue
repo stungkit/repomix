@@ -216,7 +216,7 @@ function handleFileUpload(file: File) {
 
 .input-row {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 12px;
   margin-bottom: 24px;
   align-items: start;
@@ -287,12 +287,16 @@ function handleFileUpload(file: File) {
 
 .input-field {
   align-self: start;
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
 }
 
 .pack-button-wrapper {
   display: flex;
   align-items: stretch;
   align-self: start;
+  flex-shrink: 0;
 }
 
 /* Responsive adjustments */

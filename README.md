@@ -179,7 +179,7 @@ To compress the output:
 repomix --compress
 
 # You can also use it with remote repositories:
-repomix --remote yamaadshy/repomix --compress
+repomix --remote yamadashy/repomix --compress
 ```
 
 To initialize a new configuration file (`repomix.config.json`):
