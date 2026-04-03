@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775086220097,
+  "lastUpdate": 1775194126637,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -225,6 +225,51 @@ window.BENCHMARK_DATA = {
             "range": "±38",
             "unit": "ms",
             "extra": "Median of 19 runs\nQ1: 2711ms, Q3: 2749ms\nAll times: 2689, 2694, 2704, 2707, 2711, 2712, 2719, 2724, 2725, 2727, 2727, 2728, 2734, 2744, 2749, 2751, 2759, 2783, 2853ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "03828983d04ccdbaaea75564f1ab01d253938baa",
+          "message": "Merge pull request #1372 from yamadashy/perf/eliminate-child-process-in-default-action\n\nperf(cli): Eliminate child process in default action",
+          "timestamp": "2026-04-03T13:12:14+09:00",
+          "tree_id": "6717846d14036e1d092acd50947ab1721a5bcf47",
+          "url": "https://github.com/stungkit/repomix/commit/03828983d04ccdbaaea75564f1ab01d253938baa"
+        },
+        "date": 1775194126310,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 1188,
+            "range": "±186",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 1133ms, Q3: 1319ms\nAll times: 1105, 1107, 1114, 1117, 1120, 1120, 1129, 1133, 1134, 1135, 1136, 1137, 1138, 1145, 1151, 1188, 1206, 1206, 1210, 1214, 1259, 1293, 1319, 1332, 1353, 1385, 1393, 1416, 1491, 1750ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 1993,
+            "range": "±15",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1983ms, Q3: 1998ms\nAll times: 1969, 1974, 1974, 1975, 1982, 1983, 1985, 1989, 1992, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1998, 2008, 2021, 2094ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 2586,
+            "range": "±60",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 2570ms, Q3: 2630ms\nAll times: 2551, 2560, 2560, 2561, 2563, 2570, 2571, 2573, 2578, 2582, 2586, 2606, 2610, 2618, 2620, 2630, 2637, 2669, 2684, 2720ms"
           }
         ]
       }
