@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775302223822,
+  "lastUpdate": 1775345386324,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -315,6 +315,51 @@ window.BENCHMARK_DATA = {
             "range": "±44",
             "unit": "ms",
             "extra": "Median of 19 runs\nQ1: 2494ms, Q3: 2538ms\nAll times: 2461, 2467, 2473, 2493, 2494, 2494, 2495, 2497, 2504, 2504, 2505, 2517, 2518, 2526, 2538, 2543, 2543, 2575, 2613ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "208f492ef967a0c683ffe627089c3baf5f279128",
+          "message": "Merge pull request #1394 from yamadashy/chore/remove-tower-sponsorship\n\nchore(sponsors): remove Tower sponsorship",
+          "timestamp": "2026-04-05T01:09:52+09:00",
+          "tree_id": "66c0283cea5cc8168a718a10870c4f3691c2d678",
+          "url": "https://github.com/stungkit/repomix/commit/208f492ef967a0c683ffe627089c3baf5f279128"
+        },
+        "date": 1775345385899,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 1238,
+            "range": "±43",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 1221ms, Q3: 1264ms\nAll times: 1173, 1174, 1189, 1191, 1204, 1215, 1220, 1221, 1221, 1225, 1225, 1226, 1228, 1231, 1234, 1238, 1239, 1245, 1250, 1251, 1259, 1260, 1264, 1283, 1284, 1303, 1307, 1325, 1519, 1554ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 2037,
+            "range": "±23",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 2026ms, Q3: 2049ms\nAll times: 1989, 2008, 2019, 2021, 2023, 2026, 2028, 2028, 2032, 2033, 2037, 2040, 2046, 2048, 2049, 2049, 2052, 2056, 2058, 2073ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 2564,
+            "range": "±90",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 2519ms, Q3: 2609ms\nAll times: 2474, 2494, 2496, 2501, 2508, 2519, 2521, 2521, 2528, 2557, 2564, 2567, 2599, 2600, 2605, 2609, 2616, 2653, 2920, 3445ms"
           }
         ]
       }
