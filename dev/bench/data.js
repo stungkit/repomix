@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775734174441,
+  "lastUpdate": 1775906910057,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -495,6 +495,51 @@ window.BENCHMARK_DATA = {
             "range": "±224",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 2475ms, Q3: 2699ms\nAll times: 2365, 2407, 2435, 2439, 2449, 2475, 2482, 2484, 2487, 2518, 2536, 2553, 2584, 2657, 2666, 2699, 2700, 2743, 3056, 3283ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c05836ac8442587ce16dd21a5dd15d4848277052",
+          "message": "Merge pull request #1455 from yamadashy/fix/codecov-badge-token\n\ndocs(readme): Fix Codecov badge token",
+          "timestamp": "2026-04-11T19:46:51+09:00",
+          "tree_id": "aa9e743ad7e9c905a1d1981714aeb535d54893e6",
+          "url": "https://github.com/stungkit/repomix/commit/c05836ac8442587ce16dd21a5dd15d4848277052"
+        },
+        "date": 1775906909737,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 1373,
+            "range": "±201",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 1239ms, Q3: 1440ms\nAll times: 1159, 1183, 1190, 1202, 1220, 1220, 1229, 1239, 1246, 1255, 1255, 1280, 1292, 1326, 1351, 1373, 1386, 1392, 1403, 1417, 1428, 1439, 1440, 1441, 1455, 1459, 1496, 1598, 1646, 1989ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 1771,
+            "range": "±26",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1761ms, Q3: 1787ms\nAll times: 1713, 1729, 1744, 1750, 1755, 1761, 1762, 1769, 1770, 1770, 1771, 1776, 1779, 1779, 1780, 1787, 1791, 1995, 2045, 2188ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 2147,
+            "range": "±43",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 2127ms, Q3: 2170ms\nAll times: 2109, 2120, 2120, 2126, 2127, 2127, 2130, 2133, 2137, 2137, 2147, 2151, 2153, 2153, 2170, 2170, 2181, 2181, 2192, 2197ms"
           }
         ]
       }
