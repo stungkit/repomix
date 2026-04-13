@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775906910057,
+  "lastUpdate": 1776101450500,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -540,6 +540,51 @@ window.BENCHMARK_DATA = {
             "range": "±43",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 2127ms, Q3: 2170ms\nAll times: 2109, 2120, 2120, 2126, 2127, 2127, 2130, 2133, 2137, 2137, 2147, 2151, 2153, 2153, 2170, 2170, 2181, 2181, 2192, 2197ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4c356f73251746c2cc3edcc68dbe19204aa1e950",
+          "message": "Merge pull request #1457 from yamadashy/perf/fast-output-tokenization\n\nperf(core): Skip redundant full-output tokenization via wrapper-extraction fast path (-13.2%)",
+          "timestamp": "2026-04-13T00:20:10+09:00",
+          "tree_id": "905174e4806045dbff1efb20decd1259331b2189",
+          "url": "https://github.com/stungkit/repomix/commit/4c356f73251746c2cc3edcc68dbe19204aa1e950"
+        },
+        "date": 1776101449953,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 1209,
+            "range": "±204",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 1101ms, Q3: 1305ms\nAll times: 967, 1015, 1068, 1093, 1096, 1096, 1100, 1101, 1109, 1118, 1129, 1168, 1177, 1178, 1181, 1209, 1220, 1232, 1249, 1269, 1272, 1287, 1305, 1318, 1327, 1353, 1381, 1418, 1466, 1482ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 1436,
+            "range": "±18",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1423ms, Q3: 1441ms\nAll times: 1393, 1415, 1417, 1418, 1420, 1423, 1423, 1426, 1433, 1433, 1436, 1436, 1437, 1438, 1439, 1441, 1443, 1457, 1462, 1467ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 2176,
+            "range": "±236",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 2119ms, Q3: 2355ms\nAll times: 2051, 2064, 2081, 2085, 2092, 2119, 2121, 2134, 2150, 2170, 2176, 2205, 2265, 2295, 2300, 2355, 2359, 2588, 2645, 3238ms"
           }
         ]
       }
