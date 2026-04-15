@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776187904321,
+  "lastUpdate": 1776295726596,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -630,6 +630,51 @@ window.BENCHMARK_DATA = {
             "range": "±30",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1928ms, Q3: 1958ms\nAll times: 1916, 1917, 1917, 1920, 1927, 1928, 1929, 1931, 1932, 1938, 1943, 1946, 1947, 1950, 1957, 1958, 1961, 1974, 1978, 1984ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c55528df3718b5adb0952da0a72efcb7772cc482",
+          "message": "Merge pull request #1469 from yamadashy/perf/reduce-module-overhead\n\nperf(core): Remove redundant minimatch and parallelize wrapper tokenization",
+          "timestamp": "2026-04-15T22:24:43+09:00",
+          "tree_id": "435703feb2ba6845db791f74a54749dcaf047bb4",
+          "url": "https://github.com/stungkit/repomix/commit/c55528df3718b5adb0952da0a72efcb7772cc482"
+        },
+        "date": 1776295726090,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 909,
+            "range": "±41",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 884ms, Q3: 925ms\nAll times: 858, 862, 863, 868, 874, 876, 880, 884, 887, 895, 896, 900, 900, 901, 903, 909, 911, 912, 916, 918, 919, 921, 925, 937, 978, 1016, 1016, 1036, 1082, 1138ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 1132,
+            "range": "±17",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1124ms, Q3: 1141ms\nAll times: 1114, 1118, 1119, 1119, 1121, 1124, 1125, 1125, 1126, 1128, 1132, 1133, 1133, 1136, 1140, 1141, 1145, 1149, 1153, 1160ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1907,
+            "range": "±25",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1894ms, Q3: 1919ms\nAll times: 1863, 1885, 1886, 1889, 1890, 1894, 1898, 1898, 1902, 1903, 1907, 1907, 1907, 1911, 1913, 1919, 1921, 1930, 1933, 1955ms"
           }
         ]
       }
