@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776511833326,
+  "lastUpdate": 1776576612927,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -720,6 +720,51 @@ window.BENCHMARK_DATA = {
             "range": "±31",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1475ms, Q3: 1506ms\nAll times: 1467, 1468, 1470, 1473, 1475, 1475, 1479, 1483, 1483, 1488, 1490, 1491, 1492, 1499, 1503, 1506, 1508, 1508, 1509, 1513ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9f6d0b5bdba0d8bea746d065cb28cff2b444b1ce",
+          "message": "Merge pull request #1489 from yamadashy/perf/try-valibot\n\nperf(config): Migrate configSchema from zod to valibot (experimental)",
+          "timestamp": "2026-04-19T10:39:01+09:00",
+          "tree_id": "3bc3369dd07cdd1654ae8481861ab5069086eb5a",
+          "url": "https://github.com/stungkit/repomix/commit/9f6d0b5bdba0d8bea746d065cb28cff2b444b1ce"
+        },
+        "date": 1776576612581,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 883,
+            "range": "±26",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 871ms, Q3: 897ms\nAll times: 850, 853, 855, 861, 864, 870, 870, 871, 874, 874, 878, 879, 880, 882, 883, 883, 883, 886, 889, 889, 889, 894, 897, 899, 905, 915, 921, 984, 999, 1012ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 1531,
+            "range": "±45",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1517ms, Q3: 1562ms\nAll times: 1498, 1502, 1506, 1515, 1517, 1517, 1521, 1525, 1528, 1530, 1531, 1539, 1542, 1545, 1555, 1562, 1574, 1591, 1621, 1804ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1887,
+            "range": "±23",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1875ms, Q3: 1898ms\nAll times: 1844, 1855, 1861, 1868, 1872, 1875, 1876, 1876, 1876, 1879, 1887, 1888, 1888, 1891, 1896, 1898, 1900, 1901, 1903, 1914ms"
           }
         ]
       }
