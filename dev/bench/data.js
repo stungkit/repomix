@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1777699816498,
+  "lastUpdate": 1777807766398,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -1080,6 +1080,51 @@ window.BENCHMARK_DATA = {
             "range": "±34",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1710ms, Q3: 1744ms\nAll times: 1661, 1672, 1689, 1703, 1707, 1710, 1718, 1718, 1719, 1724, 1727, 1727, 1736, 1740, 1744, 1744, 1746, 1749, 1754, 1762ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "afd329561fd889265f173fad40cb4a9e149bbe34",
+          "message": "Merge pull request #1536 from yamadashy/chore/mark-skills-internal\n\nchore(skills): Mark agent-memory and contextual-commit as internal",
+          "timestamp": "2026-05-03T15:43:06+09:00",
+          "tree_id": "2d496ca7038384c8fa998775d3e2ceb6b01c0338",
+          "url": "https://github.com/stungkit/repomix/commit/afd329561fd889265f173fad40cb4a9e149bbe34"
+        },
+        "date": 1777807765540,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 2076,
+            "range": "±156",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 2002ms, Q3: 2158ms\nAll times: 1938, 1950, 1958, 1962, 1978, 1996, 1999, 2002, 2016, 2019, 2023, 2030, 2037, 2054, 2066, 2076, 2104, 2109, 2111, 2113, 2126, 2153, 2158, 2168, 2181, 2198, 2228, 2255, 2273, 2346ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 4392,
+            "range": "±360",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 4063ms, Q3: 4423ms\nAll times: 4015, 4021, 4025, 4034, 4045, 4063, 4073, 4094, 4373, 4377, 4392, 4393, 4395, 4406, 4418, 4423, 4429, 4439, 4479, 4488ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1795,
+            "range": "±21",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1787ms, Q3: 1808ms\nAll times: 1759, 1765, 1773, 1781, 1785, 1787, 1789, 1791, 1791, 1791, 1795, 1797, 1801, 1802, 1803, 1808, 1813, 1818, 1836, 1857ms"
           }
         ]
       }
