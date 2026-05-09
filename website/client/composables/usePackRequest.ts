@@ -32,10 +32,16 @@ export function usePackRequest() {
   const uploadedFile = ref<File | null>(null);
   // True once the user has signalled real intent: typed/pasted a URL,
   // uploaded a file/folder, switched modes, or tweaked options. Used to
-  // gate the Turnstile pre-mint so URL-parameter hydration (`?repo=...`),
-  // browser autofill, form restoration, and JS-executing link unfurlers
-  // don't trigger background challenges. Set-only — once true, it stays
-  // true for the session.
+  // gate the Turnstile pre-mint so URL-parameter hydration (`?repo=...`)
+  // and form restoration don't trigger background challenges. Set-only —
+  // once true, it stays true for the session.
+  //
+  // Caveat: modern Chromium / Firefox DO fire `input` events on browser
+  // autofill, which would flip this flag through TryItUrlInput's handler
+  // and trigger a wasted pre-mint for JS-executing crawlers that have
+  // autofill-like behaviour. The `isBot()` check at the pre-mint trigger
+  // sites covers that gap for well-behaved crawler UAs; sophisticated
+  // bots that spoof UA still get filtered server-side by siteverify.
   const userTouched = ref(false);
 
   // Request states
@@ -93,12 +99,15 @@ export function usePackRequest() {
       // Skip background pre-mint for known crawlers. These visitors can't
       // solve the Turnstile challenge anyway (the JS challenge requires
       // real browser fingerprints), so issuing one only inflates the CF
-      // dashboard "提示チャレンジ" / "未解決" counters without producing a
-      // usable token. The actual security gate is the server-side
-      // siteverify in turnstileMiddleware — that stays unchanged, so a
-      // crawler that spoofs UA past `isBot()` still gets blocked there.
-      // Submit-path takeToken is intentionally NOT gated to avoid
-      // false-positive lockouts of legit users with unusual UAs.
+      // dashboard "提示チャレンジ" (issued challenges) / "未解決"
+      // (unsolved) counters without producing a usable token. The actual
+      // security gate is the server-side siteverify in
+      // turnstileMiddleware — that stays unchanged, so a crawler that
+      // spoofs UA past `isBot()` still gets blocked there. The click-path
+      // `acquireTurnstileToken()` (cold-mint at submit time) is
+      // intentionally NOT gated to avoid false-positive lockouts of legit
+      // users with unusual UAs; only the warm-up paths short-circuit here
+      // and at the post-submit re-mint below.
       if (isBot()) return;
       turnstile.preMintToken().catch(() => {
         /* errors surface on the actual submit path */
