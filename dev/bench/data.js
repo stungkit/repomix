@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779449405630,
+  "lastUpdate": 1779708539903,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -1440,6 +1440,44 @@ window.BENCHMARK_DATA = {
             "range": "±50",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1108ms, Q3: 1158ms\nAll times: 1096, 1101, 1101, 1102, 1104, 1108, 1109, 1114, 1115, 1115, 1116, 1116, 1124, 1136, 1142, 1158, 1182, 1190, 1214, 1357ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "132f1b87d25f43d277a2cfd178f221a1f6190be2",
+          "message": "Merge pull request #1598 from yamadashy/fix/issue-triage-prompt-injection\n\nchore(ci): harden issue triage workflow with least-privilege split",
+          "timestamp": "2026-05-24T22:59:55+09:00",
+          "tree_id": "adeca105d532dbb3b400a85779e37cc3bb102bec",
+          "url": "https://github.com/stungkit/repomix/commit/132f1b87d25f43d277a2cfd178f221a1f6190be2"
+        },
+        "date": 1779708539563,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 447,
+            "range": "±46",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 436ms, Q3: 482ms\nAll times: 408, 409, 423, 430, 432, 433, 435, 436, 436, 437, 437, 438, 439, 440, 443, 447, 447, 451, 453, 465, 466, 481, 482, 487, 510, 528, 529, 539, 575, 620ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 738,
+            "range": "±18",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 731ms, Q3: 749ms\nAll times: 712, 715, 725, 727, 730, 731, 734, 736, 736, 738, 738, 738, 739, 739, 748, 749, 751, 754, 756, 762ms"
           }
         ]
       }
