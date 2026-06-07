@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780745400261,
+  "lastUpdate": 1780831820212,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -1703,6 +1703,51 @@ window.BENCHMARK_DATA = {
             "range": "±35",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1088ms, Q3: 1123ms\nAll times: 1078, 1082, 1083, 1085, 1087, 1088, 1091, 1092, 1092, 1093, 1099, 1103, 1109, 1112, 1117, 1123, 1124, 1126, 1126, 1129ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d62905673dd0e5bea9f335211e7c3814754cbed6",
+          "message": "Merge pull request #1618 from Samsen879/fix-multiroot-output-paths\n\nfix multi-root duplicate relative paths",
+          "timestamp": "2026-06-07T19:37:02+09:00",
+          "tree_id": "fcfa9b334934e58c13a8c9068f0df7a91681a4fa",
+          "url": "https://github.com/stungkit/repomix/commit/d62905673dd0e5bea9f335211e7c3814754cbed6"
+        },
+        "date": 1780831819232,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 585,
+            "range": "±113",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 552ms, Q3: 665ms\nAll times: 498, 522, 534, 542, 548, 548, 549, 552, 555, 556, 562, 568, 579, 584, 585, 585, 620, 635, 643, 646, 648, 654, 665, 675, 691, 705, 719, 722, 726, 806ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 848,
+            "range": "±14",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 843ms, Q3: 857ms\nAll times: 823, 826, 839, 843, 843, 843, 844, 845, 846, 848, 848, 850, 852, 854, 855, 857, 864, 866, 868, 875ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1156,
+            "range": "±42",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1142ms, Q3: 1184ms\nAll times: 1121, 1123, 1127, 1132, 1134, 1142, 1143, 1150, 1153, 1155, 1156, 1157, 1172, 1176, 1182, 1184, 1188, 1191, 1204, 1247ms"
           }
         ]
       }
