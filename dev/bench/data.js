@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781350166518,
+  "lastUpdate": 1781458180543,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -1838,6 +1838,51 @@ window.BENCHMARK_DATA = {
             "range": "±16",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1093ms, Q3: 1109ms\nAll times: 1077, 1078, 1082, 1082, 1092, 1093, 1095, 1097, 1100, 1100, 1101, 1102, 1104, 1104, 1107, 1109, 1109, 1109, 1110, 1111ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d7abd413dd88adc73eb62a9c0536f41e8c6e42fa",
+          "message": "Merge pull request #1628 from serhiizghama/feat/auto-detect-github-shorthand\n\nfeat(cli): auto-detect GitHub shorthand (owner/repo) in positional arguments",
+          "timestamp": "2026-06-14T20:51:42+09:00",
+          "tree_id": "ccf6bd0d6a35035a8f9f78612082ba91562e4a74",
+          "url": "https://github.com/stungkit/repomix/commit/d7abd413dd88adc73eb62a9c0536f41e8c6e42fa"
+        },
+        "date": 1781458180158,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 607,
+            "range": "±149",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 563ms, Q3: 712ms\nAll times: 500, 513, 514, 520, 546, 553, 559, 563, 572, 582, 594, 597, 604, 605, 606, 607, 647, 649, 657, 658, 662, 674, 712, 716, 755, 774, 787, 846, 851, 1728ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 797,
+            "range": "±23",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 789ms, Q3: 812ms\nAll times: 778, 780, 786, 787, 788, 789, 793, 793, 794, 794, 797, 800, 803, 810, 810, 812, 816, 819, 823, 824ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1050,
+            "range": "±17",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1043ms, Q3: 1060ms\nAll times: 1025, 1028, 1037, 1041, 1042, 1043, 1045, 1046, 1048, 1049, 1050, 1052, 1052, 1055, 1055, 1060, 1071, 1072, 1079, 1109ms"
           }
         ]
       }
