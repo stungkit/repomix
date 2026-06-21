@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782019736425,
+  "lastUpdate": 1782062937521,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -2063,6 +2063,51 @@ window.BENCHMARK_DATA = {
             "range": "±40",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1218ms, Q3: 1258ms\nAll times: 1192, 1193, 1196, 1199, 1207, 1218, 1220, 1220, 1225, 1226, 1226, 1226, 1227, 1244, 1256, 1258, 1268, 1284, 1327, 1543ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f04db0088ec00969436a0878bdae8f43176f9e11",
+          "message": "Merge pull request #1631 from Samsen879/codex/fix-remote-split-output-copy\n\nfix(cli): copy split output files after remote packing",
+          "timestamp": "2026-06-22T00:15:00+09:00",
+          "tree_id": "912dc1acf2d96ef0ce452465fe8818ad2ab58688",
+          "url": "https://github.com/stungkit/repomix/commit/f04db0088ec00969436a0878bdae8f43176f9e11"
+        },
+        "date": 1782062936450,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 491,
+            "range": "±22",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 484ms, Q3: 506ms\nAll times: 480, 481, 481, 481, 482, 483, 483, 484, 484, 486, 486, 488, 489, 490, 491, 491, 493, 493, 494, 496, 498, 501, 506, 520, 526, 536, 536, 552, 571, 572ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 878,
+            "range": "±26",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 869ms, Q3: 895ms\nAll times: 849, 862, 862, 864, 868, 869, 873, 874, 876, 878, 878, 879, 883, 888, 890, 895, 908, 976, 991, 998ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1041,
+            "range": "±15",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1036ms, Q3: 1051ms\nAll times: 1022, 1031, 1034, 1034, 1036, 1036, 1036, 1037, 1038, 1040, 1041, 1044, 1047, 1048, 1049, 1051, 1051, 1053, 1059, 1070ms"
           }
         ]
       }
