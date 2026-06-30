@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782754188377,
+  "lastUpdate": 1782840558419,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -2333,6 +2333,51 @@ window.BENCHMARK_DATA = {
             "range": "±21",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1140ms, Q3: 1161ms\nAll times: 1117, 1123, 1124, 1135, 1136, 1140, 1141, 1144, 1145, 1146, 1149, 1149, 1155, 1155, 1157, 1161, 1164, 1175, 1310, 1329ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6873d5212227998a4de7395744acc1f2d894cc20",
+          "message": "Merge pull request #1681 from isaka1022/fix/tree-sitter-memory-leak\n\nfix(core): free web-tree-sitter Tree after parsing to avoid WASM heap leak",
+          "timestamp": "2026-06-30T23:42:43+09:00",
+          "tree_id": "e918b1347dd141aba65698cecfcfda6a0bdaa176",
+          "url": "https://github.com/stungkit/repomix/commit/6873d5212227998a4de7395744acc1f2d894cc20"
+        },
+        "date": 1782840557902,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 555,
+            "range": "±76",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 536ms, Q3: 612ms\nAll times: 517, 519, 520, 528, 531, 531, 534, 536, 538, 542, 542, 543, 545, 550, 553, 555, 555, 557, 566, 572, 593, 604, 612, 627, 659, 695, 730, 733, 785, 853ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 930,
+            "range": "±35",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 919ms, Q3: 954ms\nAll times: 899, 906, 912, 914, 916, 919, 923, 928, 929, 929, 930, 932, 936, 936, 950, 954, 1056, 1066, 1087, 1128ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1162,
+            "range": "±22",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1152ms, Q3: 1174ms\nAll times: 1136, 1139, 1148, 1148, 1149, 1152, 1152, 1157, 1162, 1162, 1162, 1163, 1163, 1169, 1170, 1174, 1178, 1181, 1181, 1187ms"
           }
         ]
       }
