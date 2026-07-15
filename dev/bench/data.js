@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783900621906,
+  "lastUpdate": 1784158145770,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -2738,6 +2738,51 @@ window.BENCHMARK_DATA = {
             "range": "±27",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1222ms, Q3: 1249ms\nAll times: 1208, 1216, 1218, 1220, 1221, 1222, 1223, 1223, 1227, 1227, 1228, 1233, 1237, 1246, 1247, 1249, 1253, 1273, 1338, 1495ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a5577d5718b1e88940b71d17fe9842ea45382a3a",
+          "message": "Merge pull request #1725 from serhiizghama/fix-files-false-json\n\nfix(output): Widen Markdown fence so git diffs can't break it",
+          "timestamp": "2026-07-16T00:31:04+09:00",
+          "tree_id": "423e9674870813f860676fa9713ea18cd382b1ea",
+          "url": "https://github.com/stungkit/repomix/commit/a5577d5718b1e88940b71d17fe9842ea45382a3a"
+        },
+        "date": 1784158144788,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 593,
+            "range": "±88",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 549ms, Q3: 637ms\nAll times: 503, 529, 531, 532, 535, 537, 543, 549, 554, 554, 557, 564, 578, 584, 584, 593, 599, 607, 624, 627, 629, 630, 637, 640, 662, 663, 663, 755, 763, 767ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 879,
+            "range": "±39",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 849ms, Q3: 888ms\nAll times: 839, 843, 845, 847, 849, 849, 856, 873, 874, 876, 879, 879, 883, 884, 885, 888, 896, 897, 903, 911ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1132,
+            "range": "±13",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1122ms, Q3: 1135ms\nAll times: 1103, 1103, 1113, 1115, 1120, 1122, 1123, 1125, 1130, 1132, 1132, 1132, 1132, 1133, 1134, 1135, 1137, 1140, 1141, 1153ms"
           }
         ]
       }
