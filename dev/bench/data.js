@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784158145770,
+  "lastUpdate": 1784374138920,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -2783,6 +2783,51 @@ window.BENCHMARK_DATA = {
             "range": "±13",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1122ms, Q3: 1135ms\nAll times: 1103, 1103, 1113, 1115, 1120, 1122, 1123, 1125, 1130, 1132, 1132, 1132, 1132, 1133, 1134, 1135, 1137, 1140, 1141, 1153ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "71ba866e272054e74ed7b26f5db897d2489fb3c2",
+          "message": "Merge pull request #1739 from yamadashy/renovate/major-website-major-dependencies\n\nchore(deps): update dependency typescript to v7",
+          "timestamp": "2026-07-18T16:21:26+09:00",
+          "tree_id": "faee9f4afc2684bc4757935e60d0c8e7ce357153",
+          "url": "https://github.com/stungkit/repomix/commit/71ba866e272054e74ed7b26f5db897d2489fb3c2"
+        },
+        "date": 1784374137938,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 551,
+            "range": "±77",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 509ms, Q3: 586ms\nAll times: 483, 483, 485, 487, 492, 503, 505, 509, 526, 536, 538, 545, 546, 547, 549, 551, 551, 560, 564, 564, 566, 568, 586, 588, 591, 600, 611, 629, 674, 676ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 946,
+            "range": "±29",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 937ms, Q3: 966ms\nAll times: 924, 924, 926, 928, 929, 937, 939, 940, 943, 944, 946, 949, 955, 959, 962, 966, 974, 975, 976, 982ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1229,
+            "range": "±23",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1218ms, Q3: 1241ms\nAll times: 1203, 1206, 1208, 1209, 1217, 1218, 1219, 1223, 1227, 1227, 1229, 1231, 1232, 1235, 1238, 1241, 1243, 1243, 1244, 1246ms"
           }
         ]
       }
