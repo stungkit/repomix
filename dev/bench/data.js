@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784460545882,
+  "lastUpdate": 1784503707873,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -2918,6 +2918,51 @@ window.BENCHMARK_DATA = {
             "range": "±32",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1224ms, Q3: 1256ms\nAll times: 1209, 1210, 1213, 1218, 1223, 1224, 1230, 1236, 1237, 1237, 1238, 1241, 1249, 1250, 1252, 1256, 1264, 1265, 1268, 1273ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "44457c890236440bc683e9e5d84499a0a4911550",
+          "message": "Merge pull request #1727 from serhiizghama/fix/markdown-language-hint-subdir-filenames\n\nfix(output): Resolve Markdown language hint for extensionless filenames in subdirectories",
+          "timestamp": "2026-07-20T00:52:15+09:00",
+          "tree_id": "04d8c59fae0fb4dd84ecaba66ca03d0b7157780b",
+          "url": "https://github.com/stungkit/repomix/commit/44457c890236440bc683e9e5d84499a0a4911550"
+        },
+        "date": 1784503706939,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 911,
+            "range": "±225",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 769ms, Q3: 994ms\nAll times: 652, 660, 668, 712, 726, 756, 761, 769, 810, 811, 843, 845, 887, 890, 891, 911, 913, 921, 942, 943, 952, 954, 994, 997, 1002, 1078, 1093, 1126, 1146, 1146ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 911,
+            "range": "±20",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 899ms, Q3: 919ms\nAll times: 883, 888, 894, 894, 895, 899, 899, 909, 909, 910, 911, 912, 913, 917, 918, 919, 920, 923, 932, 944ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1167,
+            "range": "±21",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1153ms, Q3: 1174ms\nAll times: 1142, 1145, 1147, 1148, 1152, 1153, 1159, 1161, 1162, 1163, 1167, 1168, 1169, 1172, 1173, 1174, 1178, 1181, 1200, 1204ms"
           }
         ]
       }
