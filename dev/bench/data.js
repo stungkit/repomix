@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784395735206,
+  "lastUpdate": 1784460545882,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -2873,6 +2873,51 @@ window.BENCHMARK_DATA = {
             "range": "±46",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1123ms, Q3: 1169ms\nAll times: 1114, 1114, 1122, 1122, 1122, 1123, 1128, 1132, 1133, 1136, 1137, 1137, 1138, 1151, 1164, 1169, 1174, 1225, 1306, 1529ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9af14295398c4a390a3997ba717306ca289a6770",
+          "message": "Merge pull request #1724 from serhiizghama/fix/split-output-subdivide-large-dir\n\nfix(core): subdivide oversized directories when splitting output",
+          "timestamp": "2026-07-19T16:11:27+09:00",
+          "tree_id": "92aa5291c24ee570b19775a8e6bf68ba2e48116f",
+          "url": "https://github.com/stungkit/repomix/commit/9af14295398c4a390a3997ba717306ca289a6770"
+        },
+        "date": 1784460545368,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 891,
+            "range": "±189",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 784ms, Q3: 973ms\nAll times: 584, 610, 627, 690, 728, 777, 778, 784, 807, 817, 821, 836, 841, 853, 857, 891, 898, 907, 921, 942, 964, 970, 973, 1048, 1055, 1089, 1114, 1137, 1179, 1381ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 906,
+            "range": "±36",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 895ms, Q3: 931ms\nAll times: 880, 881, 886, 890, 895, 895, 897, 899, 900, 906, 906, 907, 911, 913, 914, 931, 937, 947, 994, 1010ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1238,
+            "range": "±32",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1224ms, Q3: 1256ms\nAll times: 1209, 1210, 1213, 1218, 1223, 1224, 1230, 1236, 1237, 1237, 1238, 1241, 1249, 1250, 1252, 1256, 1264, 1265, 1268, 1273ms"
           }
         ]
       }
