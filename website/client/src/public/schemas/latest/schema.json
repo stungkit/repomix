@@ -10,6 +10,37 @@
       "properties": {
         "maxFileSize": {
           "type": "number"
+        },
+        "processors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "pattern": {
+                "type": "string"
+              },
+              "command": {
+                "type": "string"
+              },
+              "timeout": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2147483647
+              },
+              "onError": {
+                "enum": [
+                  "fail",
+                  "skip"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "pattern",
+              "command"
+            ],
+            "additionalProperties": false
+          }
         }
       },
       "additionalProperties": false
