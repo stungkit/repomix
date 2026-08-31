@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787484526350,
+  "lastUpdate": 1788154182958,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -3683,6 +3683,51 @@ window.BENCHMARK_DATA = {
             "range": "±36",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1212ms, Q3: 1248ms\nAll times: 1186, 1191, 1198, 1201, 1202, 1212, 1213, 1213, 1217, 1220, 1221, 1221, 1225, 1232, 1239, 1248, 1296, 1347, 1421, 1593ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b79ca3b5abcaea81d681d9436fd34d6b9a51eb6c",
+          "message": "Merge pull request #1828 from yamadashy/renovate/github-actions-non-major-dependencies\n\nchore(deps): update anthropics/claude-code-action action to v1.0.201",
+          "timestamp": "2026-08-30T18:38:05+09:00",
+          "tree_id": "4478457d3b877f067fc8f03c33c6217cce3173cc",
+          "url": "https://github.com/stungkit/repomix/commit/b79ca3b5abcaea81d681d9436fd34d6b9a51eb6c"
+        },
+        "date": 1788154182399,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 787,
+            "range": "±140",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 739ms, Q3: 879ms\nAll times: 653, 669, 673, 695, 702, 716, 725, 739, 740, 742, 743, 750, 756, 769, 779, 787, 789, 803, 808, 812, 849, 875, 879, 889, 897, 901, 902, 903, 935, 948ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 943,
+            "range": "±59",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 919ms, Q3: 978ms\nAll times: 908, 916, 917, 919, 919, 919, 930, 931, 934, 942, 943, 949, 952, 963, 968, 978, 1044, 1064, 1084, 1109ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1238,
+            "range": "±22",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1226ms, Q3: 1248ms\nAll times: 1193, 1203, 1213, 1218, 1225, 1226, 1228, 1231, 1232, 1236, 1238, 1238, 1239, 1239, 1240, 1248, 1252, 1257, 1260, 1294ms"
           }
         ]
       }
