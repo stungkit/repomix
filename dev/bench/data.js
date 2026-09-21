@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789925953693,
+  "lastUpdate": 1789990185151,
   "repoUrl": "https://github.com/stungkit/repomix",
   "entries": {
     "Repomix Performance": [
@@ -4178,6 +4178,51 @@ window.BENCHMARK_DATA = {
             "range": "±14",
             "unit": "ms",
             "extra": "Median of 20 runs\nQ1: 1220ms, Q3: 1234ms\nAll times: 1193, 1206, 1211, 1217, 1219, 1220, 1221, 1221, 1223, 1228, 1228, 1228, 1230, 1231, 1233, 1234, 1238, 1258, 1260, 1272ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "koukun0120@gmail.com",
+            "name": "Kazuki Yamada",
+            "username": "yamadashy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5edcc6dec613764a4d6e8ae4854904c055780901",
+          "message": "Merge pull request #1886 from yamadashy/chore/triage-exclude-good-first-issue\n\nchore(ci): Stop issue triage from applying good first issue",
+          "timestamp": "2026-09-21T18:04:39+09:00",
+          "tree_id": "fb4986448d7e1c602d9fde736c99da432046b26f",
+          "url": "https://github.com/stungkit/repomix/commit/5edcc6dec613764a4d6e8ae4854904c055780901"
+        },
+        "date": 1789990183829,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Repomix Pack (macOS)",
+            "value": 580,
+            "range": "±32",
+            "unit": "ms",
+            "extra": "Median of 30 runs\nQ1: 570ms, Q3: 602ms\nAll times: 546, 554, 562, 563, 564, 566, 568, 570, 571, 572, 574, 575, 576, 576, 578, 580, 582, 582, 590, 590, 593, 596, 602, 608, 608, 617, 621, 633, 660, 664ms"
+          },
+          {
+            "name": "Repomix Pack (Linux)",
+            "value": 1018,
+            "range": "±35",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1001ms, Q3: 1036ms\nAll times: 981, 989, 991, 994, 999, 1001, 1002, 1005, 1015, 1017, 1018, 1022, 1030, 1034, 1035, 1036, 1036, 1037, 1046, 1047ms"
+          },
+          {
+            "name": "Repomix Pack (Windows)",
+            "value": 1330,
+            "range": "±16",
+            "unit": "ms",
+            "extra": "Median of 20 runs\nQ1: 1322ms, Q3: 1338ms\nAll times: 1308, 1315, 1316, 1318, 1322, 1322, 1327, 1328, 1328, 1329, 1330, 1331, 1331, 1331, 1338, 1338, 1338, 1340, 1354, 1366ms"
           }
         ]
       }
